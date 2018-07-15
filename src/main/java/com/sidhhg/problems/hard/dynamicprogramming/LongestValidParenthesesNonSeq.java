@@ -15,6 +15,8 @@ import org.apache.commons.lang3.StringUtils;
  *                Output: 4
  *                Explanation: The longest valid parentheses substring is "()x()". Although they're not consecutive but the longest valid are two pairs of ()
  * </pre>
+ * Running time complexity: O(n) 
+ * Space complexity: O(n) * 2 = O(n) - we are using 2 hashmaps to memoize the output of previous recursive calls.
  */
 public class LongestValidParenthesesNonSeq {
     private static HashMap<String, Integer> scores = new HashMap<>();

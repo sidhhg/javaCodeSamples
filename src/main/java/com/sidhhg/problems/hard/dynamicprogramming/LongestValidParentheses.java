@@ -15,6 +15,9 @@ import java.util.*;
  *                Output: 6
  *                Explanation: The longest valid parentheses substring is "()(())".
  * </pre>
+ *
+ * Running time complexity:  O(n) - we iterate over the list once.
+ * Space complexity: O(n) - we are using stack to store the data.
  */
 public class LongestValidParentheses {
 
