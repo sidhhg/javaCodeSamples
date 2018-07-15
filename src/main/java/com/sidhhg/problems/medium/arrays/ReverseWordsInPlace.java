@@ -1,4 +1,4 @@
-package com.sidhhg.arrays;
+package com.sidhhg.problems.medium.arrays;
 
 import java.util.Objects;
 
