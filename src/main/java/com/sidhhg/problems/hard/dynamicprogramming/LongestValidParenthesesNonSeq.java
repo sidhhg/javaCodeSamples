@@ -1,10 +1,8 @@
 package com.sidhhg.problems.hard.dynamicprogramming;
 
-
-import org.apache.commons.lang3.StringUtils;
-
 import java.util.HashMap;
 import java.util.Objects;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
@@ -22,7 +20,7 @@ public class LongestValidParenthesesNonSeq {
     private static HashMap<String, Integer> scores = new HashMap<>();
     private static HashMap<String, Integer> closeParantheses = new HashMap<>();
 
-    public static void lvp(String p, Integer pos) {
+    private static void lvp(String p, Integer pos) {
         if(p == null || p.equals("") || Objects.isNull(pos) || pos < 0 || p.length() == 1)
             return;
 
