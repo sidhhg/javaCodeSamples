@@ -7,6 +7,18 @@
     <groupId>siddhg</groupId>
     <artifactId>test.code</artifactId>
     <version>1.0-SNAPSHOT</version>
+         
+    <properties>
+         <!-- global libraries -->
+         <source.encoding.value>UTF-8</source.encoding.value> 
+         <java.language.version>15</java.language.version> 
+
+         <!-- PROJECT DEFAULTS -->
+         <project.build.sourceEncoding>${source.encoding.value}</project.build.sourceEncoding>
+         <project.reporting.outputEncoding>${source.encoding.value}</project.reporting.outputEncoding>
+         <maven.compiler.source>${java.language.version}</maven.compiler.source>
+         <maven.compiler.target>${java.language.version}</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -15,5 +27,19 @@
             <version>3.7</version>
         </dependency>
     </dependencies>
+         
+    <build>
+         <plugins>
+                  <plugin>
+                           <groupId>org.apache.maven.plugins</groupId>
+                           <artifactId>maven-compiler-plugin</artifactId>
+                           <configuration>
+                                    <source>${java.language.version}</source>
+                                    <target>${java.language.version}</target>
+                                    <compilerArgs>--enable-preview</compilerArgs>
+                           </configuration>
+                  </plugin>
+         </plugins>
+    </build>
  
 </project>
