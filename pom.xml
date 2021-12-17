@@ -11,7 +11,7 @@
     <properties>
          <!-- global libraries -->
          <source.encoding.value>UTF-8</source.encoding.value> 
-         <java.language.version>8</java.language.version> 
+         <java.language.version>1.8</java.language.version> 
 
          <!-- PROJECT DEFAULTS -->
          <project.build.sourceEncoding>${source.encoding.value}</project.build.sourceEncoding>
@@ -33,6 +33,7 @@
                   <plugin>
                            <groupId>org.apache.maven.plugins</groupId>
                            <artifactId>maven-compiler-plugin</artifactId>
+                           <version>3.8.1</version>
                            <configuration>
                                     <source>${java.language.version}</source>
                                     <target>${java.language.version}</target>
